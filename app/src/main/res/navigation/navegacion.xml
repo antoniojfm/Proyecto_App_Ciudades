@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion"
+    app:startDestination="@id/listaCiudades">
+    <fragment
+        android:id="@+id/listaCiudades"
+        android:name="com.example.app_ciudades_antoniojesus.ListaCiudades"
+        android:label="fragment_lista_ciudades"
+        tools:layout="@layout/fragment_lista_ciudades" >
+        <action
+            android:id="@+id/action_listaCiudades_to_meterCiudad"
+            app:destination="@id/meterCiudad" />
+        <action
+            android:id="@+id/action_listaCiudades_to_ciudadSeleccionada"
+            app:destination="@id/ciudadSeleccionada" />
+        <action
+            android:id="@+id/action_listaCiudades_to_mostrarCiudades"
+            app:destination="@id/mostrarCiudades" />
+        <action
+            android:id="@+id/action_listaCiudades_to_editarCiudad"
+            app:destination="@id/editarCiudad" />
+    </fragment>
+    <fragment
+        android:id="@+id/meterCiudad"
+        android:name="com.example.app_ciudades_antoniojesus.MeterCiudad"
+        android:label="fragment_meter_ciudad"
+        tools:layout="@layout/fragment_meter_ciudad" />
+    <fragment
+        android:id="@+id/ciudadSeleccionada"
+        android:name="com.example.app_ciudades_antoniojesus.CiudadSeleccionada"
+        android:label="fragment_ciudad_seleccionada"
+        tools:layout="@layout/fragment_ciudad_seleccionada" />
+    <fragment
+        android:id="@+id/mostrarCiudades"
+        android:name="com.example.app_ciudades_antoniojesus.MostrarCiudades"
+        android:label="fragment_mostrar_ciudades"
+        tools:layout="@layout/fragment_mostrar_ciudades" >
+        <action
+            android:id="@+id/action_mostrarCiudades_to_ciudadSeleccionada"
+            app:destination="@id/ciudadSeleccionada" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarCiudad"
+        android:name="com.example.app_ciudades_antoniojesus.EditarCiudad"
+        android:label="fragment_editar_ciudad"
+        tools:layout="@layout/fragment_editar_ciudad" />
+</navigation>

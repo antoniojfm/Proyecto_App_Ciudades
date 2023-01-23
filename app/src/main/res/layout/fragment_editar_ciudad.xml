@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MeterCiudad">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Titulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Fragment Editar Ciudad"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/dato_nombre_ciudad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Titulo"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/dato_provincia_ciudad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="Provincia"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="@+id/dato_nombre_ciudad"
+                app:layout_constraintTop_toBottomOf="@+id/dato_nombre_ciudad"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/dato_pais_ciudad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:hint="Pais"
+                android:inputType="textAutoCorrect|textPersonName|textAutoComplete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dato_provincia_ciudad"
+                app:layout_constraintTop_toTopOf="@+id/dato_provincia_ciudad"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/dato_habitantes_ciudad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="Habitantes"
+                android:inputType="number"
+                app:layout_constraintStart_toStartOf="@+id/dato_provincia_ciudad"
+                app:layout_constraintTop_toBottomOf="@+id/dato_provincia_ciudad"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Switch
+                android:id="@+id/visitado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visitado"
+                app:layout_constraintBottom_toBottomOf="@+id/dato_habitantes_ciudad"
+                app:layout_constraintEnd_toEndOf="@+id/dato_pais_ciudad"
+                app:layout_constraintStart_toEndOf="@+id/dato_habitantes_ciudad"
+                app:layout_constraintTop_toTopOf="@+id/dato_habitantes_ciudad"
+                tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+
+            <Button
+                android:id="@+id/bt_seleccion_imagen_ciudad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Selecciona imagen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dato_habitantes_ciudad" />
+
+            <ImageView
+                android:id="@+id/imagen_seleccionada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/dato_pais_ciudad"
+                app:layout_constraintStart_toStartOf="@+id/dato_habitantes_ciudad"
+                app:layout_constraintTop_toBottomOf="@+id/bt_seleccion_imagen_ciudad"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Marca la Ciudad en el mapa"
+                app:layout_constraintStart_toStartOf="@+id/dato_habitantes_ciudad"
+                app:layout_constraintTop_toBottomOf="@+id/imagen_seleccionada" />
+
+            <fragment
+                android:id="@+id/mapa_editarciudades"
+                android:name="com.example.app_ciudades_antoniojesus.MyMapView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/bt_EditarCiudad"
+                app:layout_constraintEnd_toEndOf="@+id/dato_pais_ciudad"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/bt_EditarCiudad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="500dp"
+                android:layout_marginBottom="200dp"
+                android:text="Editar Ciudad"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imagen_seleccionada" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

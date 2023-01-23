@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.2245" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/drawable/ic_baseline_clear_24.xml" value="0.25" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.248" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.248" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.1835" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/drawable/ic_baseline_star_white_24.xml" value="0.1465" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/layout/fragment_ciudad_seleccionada.xml" value="0.2911500641299701" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/layout/fragment_editar_ciudad.xml" value="0.19880290722530997" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/layout/fragment_lista_ciudades.xml" value="0.2421875" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/layout/fragment_meter_ciudad.xml" value="0.2421875" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/layout/fragment_mostrar_ciudades.xml" value="0.14229001253656498" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/layout/vista_ciudad.xml" value="0.24114583333333334" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/menu/menu.xml" value="0.19628535246939638" />
+        <entry key="..\:/DAM Estech/Android/App_Ciudades_AntonioJesus/app/src/main/res/xml/provider_paths.xml" value="0.19880290722530997" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
